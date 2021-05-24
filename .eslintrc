@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "wesbos"
+  ],
+  "rules": {
+    "no-plusplus": 0,
+    "no-console": 0,
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "doubleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 4
+      }
+    ]
+  }
+}
