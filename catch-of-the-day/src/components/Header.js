@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from "react";
 
 class Header extends React.Component {
@@ -13,7 +15,7 @@ class Header extends React.Component {
                     Day
                 </h1>
                 <h3 className="tagline">
-                    <span>Fresh Seafood Market</span>
+                    <span>{this.props.tagline}</span>
                 </h3>
             </header>
         );
