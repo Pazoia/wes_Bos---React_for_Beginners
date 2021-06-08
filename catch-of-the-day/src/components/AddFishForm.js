@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from "react";
 
 class AddFishForm extends React.Component {
@@ -12,6 +14,7 @@ class AddFishForm extends React.Component {
     createFish = (event) => {
         // 1 - Stop the form from submitting
         event.preventDefault();
+        // 2 - Collecting fish data
         const fish = {
             name: this.nameRef.current.value,
             price: parseFloat(this.priceRef.current.value),
@@ -19,7 +22,9 @@ class AddFishForm extends React.Component {
             desc: this.descRef.current.value,
             image: this.imageRef.current.value,
         };
-        console.log(fish);
+        this.props.addFish(fish);
+        // Refresh the form after submitting
+        event.currentTarget.reset();
     };
 
     render() {
