@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from "react";
 import { getFunName } from "../helpers";
 
@@ -8,8 +10,9 @@ class StorePicker extends React.Component {
         // 1 - Stop form from submitting
         event.preventDefault();
         // 2 - Get the text from input
-        console.log(this);
+        const storeName = this.myInput.current.value;
         // 3 - Change the page to /store/whatever-is-entered
+        this.props.history.push(`/store/${storeName}`);
     };
 
     render() {
