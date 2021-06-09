@@ -1,15 +1,11 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from "react";
 
 class AddFishForm extends React.Component {
-    /* eslint-disable lines-between-class-members */
     nameRef = React.createRef();
     priceRef = React.createRef();
     statusRef = React.createRef();
     descRef = React.createRef();
     imageRef = React.createRef();
-    /* eslint-enable lines-between-class-members */
 
     createFish = (event) => {
         // 1 - Stop the form from submitting

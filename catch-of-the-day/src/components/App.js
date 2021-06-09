@@ -1,6 +1,3 @@
-/* eslint-disable react/no-access-state-in-setstate */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/state-in-constructor */
 import React from "react";
 import Header from "./Header.js";
 import Order from "./Order.js";
@@ -8,9 +5,7 @@ import Inventory from "./Inventory.js";
 
 class App extends React.Component {
     state = {
-        // eslint-disable-next-line react/no-unused-state
         fishes: {},
-        // eslint-disable-next-line react/no-unused-state
         order: {},
     };
 
